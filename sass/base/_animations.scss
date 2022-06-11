@@ -1,0 +1,9 @@
+@keyframes modal {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5) rotateZ(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1) rotateZ(360deg);
+    }
+}

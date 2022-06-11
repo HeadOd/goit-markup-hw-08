@@ -1,0 +1,40 @@
+.what-do {
+    padding-bottom: 94px;
+
+    @include bp(not-desktop) {
+        display: none;
+    }
+}
+
+.what-do__list {
+    display: flex;
+}
+
+.what-do__item {
+    position: relative;
+
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.what-do__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--txt-light-cl);
+    background-color: rgba(47, 48, 58, 0.8);
+}

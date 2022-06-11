@@ -1,0 +1,37 @@
+// variable
+@import './utils/variables';
+
+// global reset
+@import './base/reset';
+
+// vendors 
+@import './utils/mixin';
+@import './vendors/visually-hidden';
+
+// global selectors
+@import './layout/global';
+@import './layout/social_link';
+@import './layout/logo';
+@import './layout/button';
+
+// animations
+@import './base/animations';
+
+// header
+@import './layout/header';
+
+// first page - main
+@import './components/hero';
+@import './components/our-advantages';
+@import './components/what-do';
+@import './components/team';
+@import './components/customers';
+@import './components/backdrop';
+
+// footer
+@import './layout/footer';
+@import './components/footer-form';
+
+// portfolio
+@import './components/portfolio-buttons';
+@import './components/our-work';
