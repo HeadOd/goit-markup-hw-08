@@ -1,20 +1,54 @@
-// .hero {
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//     text-align: center;
-//     background-size: 1600px;
+.hero {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
 
-//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi.jpg);
-// }
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-size: 480px;
 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_sm.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_sm.webp);
+    
+    @include bp(retina) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_sm@2x.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_sm@2x.webp);
+    }
 
-// .hero__title {
-//     margin-bottom: 13px;
+    @include bp(tablet) {
+        background-size: 768px;
 
-//     color: var(--main-bgc);
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.36;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-// }
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_md.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_md.webp);
+    
+        @include bp(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_md@2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_md@2x.webp);
+        }
+    }
+
+    @include bp(desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-size: 1600px;
+
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_lg.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_lg.webp);
+    
+        @include bp(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_lg@2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bgi_lg@2x.webp);
+        }
+    }
+}
+
+.hero__title {
+    margin-bottom: 30px;
+
+    color: var(--main-bgc);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}

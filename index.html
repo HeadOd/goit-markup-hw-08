@@ -47,12 +47,12 @@
     <!-- main -->
     <main>
         <!-- hero -->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
                 <button class="button btn--blue" type="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
         <!-- our advantages -->
         <section class="advantages">
             <div class="container advantages__container">
@@ -106,18 +106,53 @@
                 <h2 class="what-do__main-title title">Чем мы занимаемся</h2>
                 <ul class="what-do__list list">
                     <li class="what-do__item">
-                        <img class="what-do__img" src="./images/what-are-we-do/work-on-tablet.jpg" alt="Вёрстка сайтов" width="370"
-                            height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./images/what-are-we-do/work-on-tablet.webp 1x,
+                            ./images/what-are-we-do/work-on-tablet@2x.webp 2x"
+                            type="image/webp">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/what-are-we-do/work-on-tablet.jpg 1x,
+                            ./images/what-are-we-do/work-on-tablet@2x.jpg 2x"
+                            type="image/jpg">
+                            <img class="what-do__img" 
+                            src="./images/what-are-we-do/work-on-tablet.jpg" alt="Вёрстка сайтов" width="370"
+                            height="294" loading="lazy">
+                        </picture>
+                        
                         <h3 class="what-do__title">Десктопные приложения</h3>
                     </li>
                     <li class="what-do__item">
-                        <img class="what-do__img" src="./images/what-are-we-do/work-at-laptop.jpg" alt="Адаптация на все устройства"
-                            width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/what-are-we-do/work-at-laptop.webp 1x,
+                            ./images/what-are-we-do/work-at-laptop@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/what-are-we-do/work-at-laptop.jpg 1x,
+                            ./images/what-are-we-do/work-at-laptop@2x.jpg 2x" 
+                            type="image/jpg">
+                            <img class="what-do__img" src="./images/what-are-we-do/work-at-laptop.jpg" alt="Адаптация на все устройства" width="370"
+                            height="294" loading="lazy">
+                        </picture>
+                        
                         <h3 class="what-do__title">Мобильные приложения</h3>
                     </li>
                     <li class="what-do__item">
-                        <img class="what-do__img" src="./images/what-are-we-do/makes-design-on-tablet.jpg" alt="Дизайн сайтов"
-                            width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/what-are-we-do/makes-design-on-tablet.webp 1x,
+                            ./images/what-are-we-do/makes-design-on-tablet@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/what-are-we-do/makes-design-on-tablet.jpg 1x,
+                            ./images/what-are-we-do/makes-design-on-tablet@2x.jpg 2x" 
+                            type="image/jpg">
+                            <img class="what-do__img" 
+                            src="./images/what-are-we-do/makes-design-on-tablet.jpg" alt="Дизайн сайтов" width="370"
+                            height="294" loading="lazy">
+                        </picture>
+                        
                         <h3 class="what-do__title">Дизайнерские решения</h3>
                     </li>
                 </ul>
@@ -129,7 +164,19 @@
                 <h2 class="team__main-title title">Наша команда</h2>
                 <ul class="team__main-list list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/our-team/igor.jpg" alt="Продукт дизайнер Игорь Демьяненко">
+                        <picture>
+                            <source media="(min-width: 320px)" 
+                            srcset="./images/our-team/igor.webp 1x,
+                            ./images/our-team/igor@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(min-width: 320px)" 
+                            srcset="./images/our-team/igor.jpg 1x,
+                            ./images/our-team/igor@2x.jpg 2x" 
+                            type="image/jpg">
+                            <img class="team__img" src="./images/our-team/igor.jpg" 
+                            alt="Продукт дизайнер Игорь Демьяненко" loading="lazy">
+                        </picture>
+                        
                         <div class="team__box">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__position" lang="en">Product Designer</p>
@@ -170,7 +217,19 @@
                     </li>
                             
                     <li class="team__item">
-                        <img class="team__img" src="./images/our-team/olga.jpg" alt="Фронтенд разработчик Ольга Репина">
+                        <picture>
+                            <source media="(min-width: 320px)" 
+                            srcset="./images/our-team/olga.webp 1x,
+                            ./images/our-team/olga@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(min-width: 320px)" 
+                            srcset="./images/our-team/olga.jpg 1x,
+                            ./images/our-team/olga@2x.jpg 2x" 
+                            type="image/jpg">
+                            <img class="team__img" src="./images/our-team/olga.jpg" 
+                            alt="Фронтенд разработчик Ольга Репина" loading="lazy">
+                        </picture>
+                        
                         <div class="team__box">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__position" lang="en">Frontend Developer</p>
@@ -211,7 +270,19 @@
                     </li>
                     
                     <li class="team__item">
-                        <img class="team__img" src="./images/our-team/nik.jpg" alt="Маркетолог Николай Тарасов">
+                        <picture>
+                            <source media="(min-width: 320px)" 
+                            srcset="./images/our-team/nik.webp 1x,
+                            ./images/our-team/nik@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(min-width: 320px)" 
+                            srcset="./images/our-team/nik.jpg 1x,
+                            ./images/our-team/nik@2x.jpg 2x" 
+                            type="image/jpg">
+                            <img class="team__img" src="./images/our-team/nik.jpg" 
+                            alt="Маркетолог Николай Тарасов" loading="lazy">
+                        </picture>
+                        
                         <div class="team__box">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__position" lang="en">Marketing</p>
@@ -252,7 +323,19 @@
                     </li>
                     
                     <li class="team__item">
-                        <img class="team__img" src="./images/our-team/michael.jpg" alt="Дизайнер Михаил Ермаков">
+                        <picture>
+                            <source media="(min-width: 320px)" 
+                            srcset="./images/our-team/michael.webp 1x,
+                            ./images/our-team/michael@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(min-width: 320px)" 
+                            srcset="./images/our-team/michael.jpg 1x,
+                            ./images/our-team/michael@2x.jpg 2x" 
+                            type="image/jpg">
+                            <img class="team__img" src="./images/our-team/michael.jpg" 
+                            alt="Дизайнер Михаил Ермаков" loading="lazy">
+                        </picture>
+                        
                         <div class="team__box">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__position" lang="en">UI Designer</p>
@@ -351,50 +434,52 @@
         </section> -->
     </main>
     <!-- footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__container">
-            <div>
-                <a href="./index.html" class="logo">
-                    Web<span class="logo--white">Studio</span>
-                </a>
-                <div class="footer-address__offline">
-                    <p class="footer-address__fact footer-address__fact--white">г. Киев, пр-т Леси Украинки, 26</p>
-                    <p class="footer-address__mail-tel footer-address__fact">info@example.com</p>
-                    <p class="footer-address__mail-tel footer-address__fact">+38 099 111 11 11</p>
+            <div class="footer__box">
+                <div class="footer__tumb">
+                    <a href="./index.html" class="logo footer__logo">
+                        Web<span class="logo--white">Studio</span>
+                    </a>
+                    <div class="footer-address__offline">
+                        <p class="footer-address__fact footer-address__fact--white">г. Киев, пр-т Леси Украинки, 26</p>
+                        <p class="footer-address__mail-tel footer-address__fact">info@example.com</p>
+                        <p class="footer-address__mail-tel footer-address__fact">+38 099 111 11 11</p>
+                    </div>
                 </div>
-            </div>
-            <div class="join">
-                <h3 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-                <ul class="social join-social list">
-                    <li class="social__item">
-                        <a href="" class="social__link link social__link--footer-color" aria-label="Instagram">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/sprite/icons.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link link social__link--footer-color" aria-label="Twitter">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/sprite/icons.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link link social__link--footer-color" aria-label="Facebook">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/sprite/icons.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link link social__link--footer-color" aria-label="Linkedin">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/sprite/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <div class="join">
+                    <h3 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                    <ul class="social join-social list">
+                        <li class="social__item">
+                            <a href="" class="social__link link social__link--footer-color" aria-label="Instagram">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/sprite/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link link social__link--footer-color" aria-label="Twitter">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/sprite/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link link social__link--footer-color" aria-label="Facebook">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/sprite/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link link social__link--footer-color" aria-label="Linkedin">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/sprite/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
        
             <div class="footer-box">
@@ -407,7 +492,6 @@
                             <use href="./images/sprite/icons.svg#footer-form"></use>
                         </svg>
                     </button>
-                    
                 </form>
             </div>
         </div>
