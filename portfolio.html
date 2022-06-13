@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- header-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="header__nav">
           <a href="./index.html" class="logo header-logo">
@@ -43,7 +43,7 @@
             +38 096 111 11 11</a>
         </div>
       </div>
-    </header>
+    </header> -->
     <!-- main -->
     <main>
       <section class="work-section">
@@ -61,7 +61,37 @@
           <ul class="list our-work work-section__our-work">
             <li class="our-work__item">
               <div class="our-work__top-box">
-                <img class="our-work__img" src="./images/portfolio/tehnokriak.jpg" height="294" alt="разработка веб-сайта">
+                <picture>
+                  <source media="(mix-width: 1200px"
+                  srcset="./images/portfolio/tehnokriak_des.webp 1x,
+                  ./images/portfolio/tehnokriak_des@2x.webp 2x"
+                  type="image/webp">
+                  <source media="(min-width: 1200px)" 
+                  srcset="./images/portfolio/tehnokriak_des.jpg 1x,
+                  ./images/portfolio/tehnokriak_des@2x.jpg 2x" 
+                  type="image/jpg">
+
+                  <source media="(min-width: 768px)" 
+                  srcset="./images/portfolio/tehnokriak_tab.webp 1x,
+                  ./images/portfolio/tehnokriak_tab@2x.webp 2x" 
+                  type="image/webp">
+                  <source media="(min-width: 768px)" 
+                  srcset="./images/portfolio/tehnokriak_tab.jpg 1x,
+                  ./images/portfolio/tehnokriak_tab@2x.jpg 2x" 
+                  type="image/jpg">
+
+                  <source media="(max-width: 767px)" 
+                  srcset="./images/portfolio/tehnokriak_mob.webp 1x,
+                  ./images/portfolio/tehnokriak_mob@2x.webp 2x" 
+                  type="image/webp">
+                  <source media="(max-width: 767px)" 
+                  srcset="./images/portfolio/tehnokriak_mob.jpg 1x,
+                  ./images/portfolio/tehnokriak_mob@2x.jpg 2x" 
+                  type="image/jpg">
+
+                  <img class="our-work__img" src="./images/portfolio/tehnokriak_mob.jpg" 
+                  height="294" alt="разработка веб-сайта" loading="lazy">
+                </picture>
                 <p class="our-work__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
               </div>
@@ -73,7 +103,25 @@
 
             <li class="our-work__item">
               <div class="our-work__top-box">
-                <img class="our-work__img" src="./images/portfolio/poster-new-orlean.jpg" height="294" alt="дизайн постеров">
+                <picture>
+                  <source media="(mix-width: 1200px" srcset="./images/portfolio/poster-new-orlean_des.webp 1x,
+                                    ./images/portfolio/poster-new-orlean_des@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio/poster-new-orlean_des.jpg 1x,
+                                    ./images/portfolio/poster-new-orlean_des@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/poster-new-orlean_tab.webp 1x,
+                                    ./images/portfolio/poster-new-orlean_tab@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/poster-new-orlean_tab.jpg 1x,
+                                    ./images/portfolio/poster-new-orlean_tab@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/poster-new-orlean_mob.webp 1x,
+                                    ./images/portfolio/poster-new-orlean_mob@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/poster-new-orlean_mob.jpg 1x,
+                                    ./images/portfolio/poster-new-orlean_mob@2x.jpg 2x" type="image/jpg">
+
+                  <img class="our-work__img" src="./images/portfolio/poster-new-orlean.jpg" 
+                  height="294" alt="дизайн постеров" loading="lazy">
+                </picture>
                 <p class="our-work__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -86,7 +134,25 @@
 
             <li class="our-work__item">
               <div class="our-work__top-box">
-                <img class="our-work__img" src="./images/portfolio/seafood.jpg" height="294" alt="разработка приложения для ресторана">
+                <picture>
+                  <source media="(mix-width: 1200px" srcset="./images/portfolio/seafood_des.webp 1x,
+                    ./images/portfolio/seafood_des@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio/seafood_des.jpg 1x,
+                    ./images/portfolio/seafood_des@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/seafood_tab.webp 1x,
+                    ./images/portfolio/seafood_tab@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/seafood_tab.jpg 1x,
+                    ./images/portfolio/seafood_tab@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/seafood_mob.webp 1x,
+                    ./images/portfolio/seafood_mob@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/seafood_mob.jpg 1x,
+                    ./images/portfolio/seafood_mob@2x.jpg 2x" type="image/jpg">
+
+                  <img class="our-work__img" src="./images/portfolio/seafood.jpg" 
+                  height="294" alt="разработка приложения для ресторана" loading="lazy">
+                </picture>
                 <p class="our-work__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -99,7 +165,25 @@
 
             <li class="our-work__item">
               <div class="our-work__top-box">
-                <img class="our-work__img" src="./images/portfolio/prime.jpg" height="294" alt="маркетинг проекта Prime">
+                <picture>
+                  <source media="(mix-width: 1200px" srcset="./images/portfolio/prime_des.webp 1x,
+                    ./images/portfolio/prime_des@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio/prime_des.jpg 1x,
+                    ./images/portfolio/prime_des@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/prime_tab.webp 1x,
+                    ./images/portfolio/prime_tab@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/prime_tab.jpg 1x,
+                    ./images/portfolio/prime_tab@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/prime_mob.webp 1x,
+                    ./images/portfolio/prime_mob@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/prime_mob.jpg 1x,
+                    ./images/portfolio/prime_mob@2x.jpg 2x" type="image/jpg">
+
+                  <img class="our-work__img" src="./images/portfolio/prime.jpg" 
+                  height="294" alt="маркетинг проекта Prime" loading="lazy">
+                </picture>
                 <p class="our-work__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -112,7 +196,25 @@
 
             <li class="our-work__item">
               <div class="our-work__top-box">
-                <img class="our-work__img" src="./images/portfolio/boxes.jpg" height="294" alt="приложение проекта Boxes">
+                <picture>
+                  <source media="(mix-width: 1200px" srcset="./images/portfolio/boxes_des.webp 1x,
+                    ./images/portfolio/boxes_des@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio/boxes_des.jpg 1x,
+                    ./images/portfolio/boxes_des@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/boxes_tab.webp 1x,
+                    ./images/portfolio/boxes_tab@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/boxes_tab.jpg 1x,
+                    ./images/portfolio/boxes_tab@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/boxes_mob.webp 1x,
+                    ./images/portfolio/boxes_mob@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/boxes_mob.jpg 1x,
+                    ./images/portfolio/boxes_mob@2x.jpg 2x" type="image/jpg">
+
+                  <img class="our-work__img" src="./images/portfolio/boxes.jpg" 
+                  height="294" alt="приложение проекта Boxes" loading="lazy">
+                </picture>
                 <p class="our-work__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -125,7 +227,25 @@
 
             <li class="our-work__item">
               <div class="our-work__top-box">
-                <img class="our-work__img" src="./images/portfolio/inspiration.jpg" height="294" alt="Веб-сайт Inspiration has no Borders">
+                <picture>
+                  <source media="(mix-width: 1200px" srcset="./images/portfolio/inspiration_des.webp 1x,
+                    ./images/portfolio/inspiration_des@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio/inspiration_des.jpg 1x,
+                    ./images/portfolio/inspiration_des@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/inspiration_tab.webp 1x,
+                    ./images/portfolio/inspiration_tab@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/inspiration_tab.jpg 1x,
+                    ./images/portfolio/inspiration_tab@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/inspiration_mob.webp 1x,
+                    ./images/portfolio/inspiration_mob@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/inspiration_mob.jpg 1x,
+                    ./images/portfolio/inspiration_mob@2x.jpg 2x" type="image/jpg">
+
+                  <img class="our-work__img" src="./images/portfolio/inspiration.jpg" height="294"
+                  alt="Веб-сайт Inspiration has no Borders" loading="lazy">
+                </picture>
                 <p class="our-work__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -138,7 +258,25 @@
 
             <li class="our-work__item">
               <div class="our-work__top-box">
-                <img class="our-work__img" src="./images/portfolio/limited-edition.jpg" height="294" alt="дизайн издания Limited Edition">
+                <picture>
+                  <source media="(mix-width: 1200px" srcset="./images/portfolio/limited-edition_des.webp 1x,
+                    ./images/portfolio/limited-edition_des@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio/limited-edition_des.jpg 1x,
+                    ./images/portfolio/limited-edition_des@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/limited-edition_tab.webp 1x,
+                    ./images/portfolio/limited-edition_tab@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/limited-edition_tab.jpg 1x,
+                    ./images/portfolio/limited-edition_tab@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/limited-edition_mob.webp 1x,
+                    ./images/portfolio/limited-edition_mob@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/limited-edition_mob.jpg 1x,
+                    ./images/portfolio/limited-edition_mob@2x.jpg 2x" type="image/jpg">
+
+                  <img class="our-work__img" src="./images/portfolio/limited-edition.jpg" height="294"
+                  alt="дизайн издания Limited Edition" loading="lazy">
+                </picture>
                 <p class="our-work__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -151,7 +289,25 @@
         
             <li class="our-work__item">
               <div class="our-work__top-box">
-                <img class="our-work__img" src="./images/portfolio/lab.jpg" height="294" alt="маркетинг проекта LAB">
+                <picture>
+                  <source media="(mix-width: 1200px" srcset="./images/portfolio/lab_des.webp 1x,
+                    ./images/portfolio/lab_des@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio/lab_des.jpg 1x,
+                    ./images/portfolio/lab_des@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/lab_tab.webp 1x,
+                    ./images/portfolio/lab_tab@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/lab_tab.jpg 1x,
+                    ./images/portfolio/lab_tab@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/lab_mob.webp 1x,
+                    ./images/portfolio/lab_mob@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/lab_mob.jpg 1x,
+                    ./images/portfolio/lab_mob@2x.jpg 2x" type="image/jpg">
+
+                  <img class="our-work__img" src="./images/portfolio/lab.jpg" 
+                  height="294" alt="маркетинг проекта LAB" loading="lazy">
+                </picture>
                 <p class="our-work__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -164,7 +320,25 @@
         
             <li class="our-work__item">
               <div class="our-work__top-box">
-                <img class="our-work__img" src="./images/portfolio/growing.jpg" height="294" alt="приложение компании Growing Business">
+                <picture>
+                  <source media="(mix-width: 1200px" srcset="./images/portfolio/growing_des.webp 1x,
+                    ./images/portfolio/growing_des@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio/growing_des.jpg 1x,
+                    ./images/portfolio/growing_des@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/growing_tab.webp 1x,
+                    ./images/portfolio/growing_tab@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="./images/portfolio/growing_tab.jpg 1x,
+                    ./images/portfolio/growing_tab@2x.jpg 2x" type="image/jpg">
+                  
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/growing_mob.webp 1x,
+                    ./images/portfolio/growing_mob@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="./images/portfolio/growing_mob.jpg 1x,
+                    ./images/portfolio/growing_mob@2x.jpg 2x" type="image/jpg">
+
+                  <img class="our-work__img" src="./images/portfolio/growing.jpg" height="294" 
+                  alt="приложение компании Growing Business" loading="lazy">
+                </picture>
                 <p class="our-work__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
