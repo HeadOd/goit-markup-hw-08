@@ -3,11 +3,6 @@
     border-bottom: 1px solid var(--header-solid);
 }
 
-// .header__container {
-     // display: flex;
-     // align-items: center;
-// }
-
 .header__nav {
     display: flex;
     align-items: center;
@@ -19,34 +14,38 @@
 
 .header-logo {
     display: inline-block;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     @include bp(tablet) {
+        padding-top: 26px;
+        padding-bottom: 26px;
         margin-right: 88px;
-        margin-top: 26px;
-        margin-bottom: 26px;
     }
-    // padding-top: 24px;
-    // padding-bottom: 24px;
-    // margin-right: 93px;
+
+    @include bp(desktop) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-right: 93px;
+    }
+
 }
 
 .header__menu {
-    display: flex;
-
     @include bp(mobile-only) {
         display: none;
-        position: absolute;
+
+        position: fixed;
         top: 0;
         left: 0;
-    
+
         padding-top: 48px;
         padding-bottom: 48px;
         padding-left: 40px;
+        padding-right: 40px;
     
         width: 100%;
-        height: 796px;
+        height: 100%;
         background-color: var(--main-bgc);
     
         &.is-open {
@@ -55,7 +54,16 @@
     }
 }
 
+.header__menu-tumb {
+    display: flex;
+    @include bp(mobile-only) {
+        flex-direction: column;
+    }
+}
+
 .header__button {
+    display: none;
+
     @include bp(mobile-only) {
         display: inline-flex;
             margin: 0;
@@ -80,7 +88,6 @@
                 fill: var(--color-logo-blue);
             }
     }
-    display: none;
 }
 
 .header__menu-svg {
@@ -113,7 +120,39 @@
         padding-top: 32px;
         padding-bottom: 32px;
     }
+}
 
+.header__list {
+    @include bp(tablet) {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin-right: 84px;
+    }
+
+    @include bp(desktop) {
+        margin-right: 300px;
+    }
+}
+
+.header__item {
+    @include bp(mobile-only) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    
+        // &:last-child {
+        //     margin-bottom: 302px;
+        // }
+    }
+    @include bp(tablet) {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+}
+
+.header__link {
     transition: color var(--transition),
     fill var(--transition);
 
@@ -124,44 +163,11 @@
     }
 }
 
-.header__list {
-    @include bp(tablet) {
-        display: flex;
-        align-items: center;
-        padding: 0;
-        margin-right: 84px;
-    }
-}
-
-.header__item {
-    @include bp(mobile-only) {
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
-    
-        &:last-child {
-            margin-bottom: 302px;
-        }
-    }
-    @include bp(tablet) {
-        &:not(:last-child) {
-            margin-right: 50px;
-        }
-    }
-}
-
-// .header__link {
-//     display: flex;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-// }
-
 .header__link--border {
     position: relative;
     @include bp(tablet) {
         color: var(--button-color);
     }
-
 }
 
 .header__link--border::after {
@@ -182,29 +188,33 @@
 .header__address {
     @include bp(mobile-only) {
         display: flex;
-        flex-flow: column-reverse;
+        flex-direction: column-reverse;
+        
+        margin-top: auto;
         margin-bottom: 64px;
     }
-
-
-    // margin-left: auto;
+    @include bp(desktop) {
+        display: flex;
+    }
 }
 
 .header__mail-tel {
     display: block;
     font-weight: 500;
+
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-    // margin-right: 50px;
 
     color: var(--text-color);
+
+    @include bp(desktop) {
+        font-size: 14px;
+        line-height: 1.14;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .header__mail-tel--mob {
@@ -234,23 +244,27 @@
     @include bp(tablet) {
         margin-bottom: 10px;
     }
+    @include bp(desktop) {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
 }
 
-// .header__mail-tel:last-child {
-//     margin-right: 0;
-// }
-
 .header__svg {
+    fill: currentColor;
+
     @include bp(mobile-only) {
         display: none;
     }
-    fill: currentColor;
-    // margin-right: 10px;
+    @include bp(desktop) {
+        margin-right: 10px;
+    }
 }
 
 .header__social {
     @include bp(mobile-only) {
         display: flex;
+        flex-wrap: wrap;
     }
     display: none;
 }

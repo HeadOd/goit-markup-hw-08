@@ -1,189 +1,194 @@
-// .backdrop {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100vw;
-//     height: 100vh;
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
-//     background-color: rgba(0, 0, 0, 0.2);
-// }
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
 
-// .backdrop.is-hidden {
-//     opacity: 0;
-//     pointer-events: none;
-// }
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-// .modal {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
+    width: calc(100% - 30px);
+    height: 609px;
 
-//     min-width: 528px;
+    padding: 40px;
 
-//     padding: 40px;
+    border-radius: 4px;
+    background-color: var(--main-bgc);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-//     border-radius: 4px;
-//     background-color: var(--main-bgc);
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    animation: modal 2000ms linear;
+}
 
-//     animation: modal 2000ms linear;
-// }
+.modal-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
-// .modal-btn {
-//     position: absolute;
-//     top: 8px;
-//     right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--main-bgc);
 
-//     padding: 0;
-//     width: 30px;
-//     height: 30px;
-//     border: 1px solid rgba(0, 0, 0, 0.1);
-//     cursor: pointer;
-//     border-radius: 50%;
-//     background-color: var(--main-bgc);
+    transition: fill var(--transition);
 
-//     transition: fill var(--transition);
+    &:focus,
+    &:hover {
+        fill: var(--button-color);
+    }
+}
 
-//     &:focus,
-//     &:hover {
-//         fill: var(--button-color);
-//     }
-// }
+.modal .main-form-title {
+    display: block;
+    margin-bottom: 12px;
 
-// .modal .main-form-title {
-//     display: block;
-//     margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+}
 
-//     font-weight: 700;
-//     font-size: 20px;
-//     line-height: 1.17;
-//     text-align: center;
-//     color: var(--title-text-color);
-// }
+.main-form-group {
+    position: relative;
+    display: block;
+    // margin-bottom: 10px;
+}
 
-// .main-form-group {
-//     position: relative;
-//     display: block;
-//     margin-bottom: 10px;
-// }
+.main-form-label {
+    display: inline-block;
+    margin-bottom: 4px;
 
-// .main-form-label {
-//     display: inline-block;
-//     margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17px;
+    letter-spacing: 0.01em;
+}
 
-//     font-size: 12px;
-//     line-height: 1.17px;
-//     letter-spacing: 0.01em;
-// }
+.main-form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 30px;
 
-// .main-form-input {
-//     width: 100%;
-//     height: 40px;
-//     padding-left: 30px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
 
-//     border: 1px solid rgba(33, 33, 33, 0.2);
-//     border-radius: 4px;
-//     outline: transparent;
+    transition: border-color var(--transition);
 
-//     transition: border-color var(--transition);
+    &:focus {
+        border-color: var(--button-color);
+    }
 
-//     &:focus {
-//         border-color: var(--button-color);
-//     }
+    &:not(:placeholder-shown) {
+        border-color: var(--button-color);
+    }
+}
 
-//     &:not(:placeholder-shown) {
-//         border-color: var(--button-color);
-//     }
-// }
+.main-form-icon {
+    position: absolute;
+    bottom: 14px;
+    left: 12px;
 
-// .main-form-icon {
-//     position: absolute;
-//     bottom: 14px;
-//     left: 12px;
+    transition: fill var(--transition);
+}
 
-//     transition: fill var(--transition);
-// }
+.main-form-input:focus+.main-form-icon {
+    fill: var(--button-color);
+}
 
-// .main-form-input:focus+.main-form-icon {
-//     fill: var(--button-color);
-// }
+.main-form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    resize: none;
 
-// .main-form-textarea {
-//     width: 100%;
-//     padding: 12px 16px;
-//     resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
 
-//     border: 1px solid rgba(33, 33, 33, 0.2);
-//     border-radius: 4px;
-//     outline: transparent;
+    transition: border-color var(--transition);
 
-//     transition: border-color var(--transition);
+    &:focus {
+        border-color: var(--button-color);
+    }
 
-//     &:focus {
-//         border-color: var(--button-color);
-//     }
+    &:not(:placeholder-shown) {
+        border-color: var(--button-color);
+    }
+}
 
-//     &:not(:placeholder-shown) {
-//         border-color: var(--button-color);
-//     }
-// }
+.m-f-g-textarea {
+    margin-bottom: 20px;
+}
 
-// .m-f-g-textarea {
-//     margin-bottom: 20px;
-// }
+textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
-// textarea::placeholder {
-//     font-size: 12px;
-//     line-height: 1.17;
-//     letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
 
-//     color: rgba(117, 117, 117, 0.5);
-// }
+.main-form-input:not(:placeholder-shown)+.main-form-icon {
+    fill: var(--button-color);
+}
 
-// .main-form-input:not(:placeholder-shown)+.main-form-icon {
-//     fill: var(--button-color);
-// }
+.m-f-checkbox {
+    position: relative;
+    display: inline-block;
 
-// .m-f-checkbox {
-//     position: relative;
-//     display: inline-block;
+    padding-left: 23px;
+    margin-bottom: 30px;
+}
 
-//     padding-left: 37px;
-//     margin-bottom: 30px;
-// }
+.m-f-c-icon {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    transition: background-color var(--transition), fill var(--transition);
+}
 
-// .m-f-c-icon {
-//     position: absolute;
-//     top: 3px;
-//     left: 12px;
-//     transition: background-color var(--transition), fill var(--transition);
-// }
+.m-f-icon-check {
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    opacity: 1;
+    fill: var(--txt-light-cl);
+}
 
-// .m-f-icon-check {
-//     position: absolute;
-//     top: 7px;
-//     left: 15px;
-//     opacity: 1;
-//     fill: var(--txt-light-cl);
-// }
+.main-form-checkbox:checked+.m-f-c-icon {
+    background-color: var(--button-color);
+    fill: var(--button-color);
+}
 
-// .main-form-checkbox:checked+.m-f-c-icon {
-//     background-color: var(--button-color);
-//     fill: var(--button-color);
-// }
+.privat-policy {
+    color: var(--button-color);
+}
 
-// .privat-policy {
-//     color: var(--button-color);
-// }
+.checkbox__span {
+    font-size: 12px;
+    line-height: 1.17;
+}
 
-
-// .m-f-btn {
-//     display: block;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
+.m-f-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
