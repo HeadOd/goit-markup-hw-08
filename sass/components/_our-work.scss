@@ -7,7 +7,11 @@
 }
 
 .our-work__item {
-    margin-bottom: 30px;
+    @include bp(mobile-only) {
+        &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+    }
 
     transition: box-shadow var(--transition);
 
@@ -18,6 +22,10 @@
     @include bp(tablet) {
         flex-basis: calc(100% / 2 - 30px);
         margin: 15px;
+    }
+
+    @include bp(desktop) {
+        flex-basis: calc(100% / 3 - 30px);
     }
 }
 
@@ -62,7 +70,8 @@
     padding-right: 24px;
     padding-left: 24px;
 
-    border: 1px solid var(--header-solid);
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .our-work__title {

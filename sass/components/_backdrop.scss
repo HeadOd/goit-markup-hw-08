@@ -19,7 +19,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: calc(100% - 30px);
+    width: 450px;
     height: 609px;
 
     padding: 40px;
@@ -29,6 +29,14 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     animation: modal 2000ms linear;
+
+    @include bp(before-mobile) {
+        width: calc(100% - 30px);
+    }
+    @include bp(desktop) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal-btn {
