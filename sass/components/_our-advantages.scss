@@ -17,7 +17,7 @@
 }
 
 .advantages__item {
-    @include bp(mobile) {
+    @include bp(mobile-only) {
         width: 450px;
         height: 226px;
 

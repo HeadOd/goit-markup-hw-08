@@ -10,6 +10,17 @@
     }
 }
 
+
+.team__main-title {
+    @include bp(tablet) {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+    @include bp(desktop) {
+        margin-bottom: 50px;
+    }
+}
+
 .team__main-list {
     display: flex;
     margin: -15px;

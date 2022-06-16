@@ -24,6 +24,13 @@
         margin: 15px;
     }
 
+    @include bp(tablet-only) {
+        &:first-child {
+                display: flex;
+                flex-direction: column;
+            }
+    }
+
     @include bp(desktop) {
         flex-basis: calc(100% / 3 - 30px);
     }
@@ -72,6 +79,10 @@
 
     border: 1px solid #EEEEEE;
     border-top: none;
+}
+
+.our-work__bottom-box--tehno {
+    flex-grow: 1;
 }
 
 .our-work__title {

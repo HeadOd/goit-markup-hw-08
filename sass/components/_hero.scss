@@ -51,4 +51,9 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @include bp(desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }

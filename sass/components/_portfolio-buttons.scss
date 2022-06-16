@@ -14,7 +14,9 @@
     @include bp(tablet) {
         margin-bottom: 30px;
     }
-    // margin-bottom: 50px;
+    @include bp(desktop) {
+        margin-bottom: 50px;
+    }
 }
 
 .btn-menu__list {
