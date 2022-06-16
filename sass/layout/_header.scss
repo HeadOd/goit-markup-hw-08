@@ -1,15 +1,12 @@
 .header {
-    position: relative;
     border-bottom: 1px solid var(--header-solid);
 }
 
 .header__nav {
+    position: relative;
+
     display: flex;
     align-items: center;
-
-    @include bp(mobile-only) {
-        justify-content: space-between;
-    }
 }
 
 .header-logo {
@@ -28,7 +25,6 @@
         padding-bottom: 24px;
         margin-right: 93px;
     }
-
 }
 
 .header__menu {
@@ -96,7 +92,7 @@
     @include bp(mobile-only) {
         position: absolute;
         top: 21px;
-        right: 25px;
+        right: 8px;
         z-index: 100;
     
         & .header__close-menu {

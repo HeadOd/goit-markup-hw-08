@@ -12,7 +12,7 @@
 
 
 .team__main-title {
-    @include bp(tablet) {
+    @include bp(not-desktop) {
         font-size: 28px;
         line-height: 1.18;
     }

@@ -204,25 +204,17 @@ img {
 }
 
 .header {
-  position: relative;
   border-bottom: 1px solid var(--header-solid);
 }
 
 .header__nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (max-width: 767.98px) {
-  .header__nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
 }
 
 .header-logo {
@@ -315,7 +307,7 @@ img {
   .header__menu-svg {
     position: absolute;
     top: 21px;
-    right: 25px;
+    right: 8px;
     z-index: 100;
   }
   .header__menu-svg .header__close-menu {
@@ -645,7 +637,6 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .advantages__item {
-    width: 450px;
     height: 226px;
   }
   .advantages__item:not(:last-child) {
@@ -708,6 +699,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .what-do__main-title {
+    margin-bottom: 50px;
+  }
+}
+
 .what-do__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,7 +751,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199.98px) {
   .team__main-title {
     font-size: 28px;
     line-height: 1.18;
@@ -897,8 +894,11 @@ img {
   }
 }
 
-.customers__main-title {
-  margin-bottom: 30px;
+@media screen and (max-width: 1199.98px) {
+  .customers__main-title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1189,6 +1189,13 @@ textarea::placeholder {
 .checkbox__span {
   font-size: 12px;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__span {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .m-f-btn {

@@ -6,6 +6,12 @@
     }
 }
 
+.what-do__main-title {
+    @include bp(desktop) {
+        margin-bottom: 50px;
+    }
+}
+
 .what-do__list {
     display: flex;
 }

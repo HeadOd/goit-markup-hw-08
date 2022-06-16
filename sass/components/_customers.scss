@@ -10,7 +10,10 @@
 }
 
 .customers__main-title {
-    margin-bottom: 30px;
+    @include bp(not-desktop) {
+        font-size: 28px;
+        line-height: 1.18;
+    }
 
     @include bp(desktop) {
         margin-bottom: 50px;
